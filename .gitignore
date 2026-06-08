@@ -1,0 +1,5 @@
+.claude/
+.gemini/
+.git/
+*.pyc
+__pycache__/
