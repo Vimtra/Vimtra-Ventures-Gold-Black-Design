@@ -84,7 +84,7 @@ nav {
 nav.scrolled { background: rgba(10,10,12,.82); backdrop-filter: blur(14px); padding: 14px 0; border-color: var(--line); }
 nav .wrap { display: flex; align-items: center; justify-content: space-between; }
 .brand { display: block; }
-.brand img { height: 32px; width: auto; display: block; transition: transform .3s; }
+.brand img { height: 42px; width: auto; display: block; transition: transform .3s; }
 .brand:hover img { transform: scale(1.02); }
 
 .menu { display: flex; gap: 28px; align-items: center; }
