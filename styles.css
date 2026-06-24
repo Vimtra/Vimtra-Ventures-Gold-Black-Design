@@ -160,7 +160,7 @@ section { padding: 120px 0; position: relative; }
 .stat-band .wrap { display: flex; flex-wrap: wrap; gap: 0; justify-content: space-between; }
 .stat-band .stat { flex: 1; min-width: 200px; padding: 70px 30px; text-align: center; border-right: 1px solid var(--line); }
 .stat-band .stat:last-child { border-right: none; }
-.stat-band .num { font-family: var(--serif); font-size: clamp(3rem,5vw,4.2rem); color: var(--gold); line-height: 1; font-weight: 500; }
+.stat-band .num { font-family: var(--serif); font-size: clamp(3rem,5vw,4.2rem); color: var(--gold); line-height: 1; font-weight: 500; font-variant-numeric: lining-nums; }
 .stat-band .lbl { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: 16px; }
 
 /* ---------- project list ---------- */
@@ -280,7 +280,7 @@ footer { background: #060608; padding: 90px 0 40px; border-top: 1px solid var(--
 .hero-stats { display: flex; flex-direction: column; border-left: 1px solid var(--line); padding-left: 38px; }
 .hero-stats .stat { padding: 26px 0; border-bottom: 1px solid var(--line); }
 .hero-stats .stat:last-child { border-bottom: none; }
-.hero-stats .num { font-family: var(--serif); font-size: 3.2rem; line-height: 1; color: var(--gold); font-weight: 500; }
+.hero-stats .num { font-family: var(--serif); font-size: 3.2rem; line-height: 1; color: var(--gold); font-weight: 500; font-variant-numeric: lining-nums; }
 .hero-stats .lbl { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: 10px; }
 
 /* ---------- ticker ---------- */
