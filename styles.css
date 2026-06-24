@@ -198,7 +198,7 @@ section { padding: 120px 0; position: relative; }
 .logo-cell:hover img { filter: none; }
 
 /* ---------- sector cards ---------- */
-.sector-scroll { display: flex; gap: 24px; overflow-x: auto; padding-bottom: 20px; scroll-snap-type: x mandatory; }
+.sector-scroll { display: flex; gap: 24px; overflow-x: auto; overflow-y: hidden; padding: 12px 0 20px; scroll-snap-type: x mandatory; }
 .sector-scroll::-webkit-scrollbar { height: 3px; }
 .sector-scroll::-webkit-scrollbar-thumb { background: var(--gold); }
 .sector-scroll::-webkit-scrollbar-track { background: var(--line); }
