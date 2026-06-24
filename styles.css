@@ -36,6 +36,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   cursor: none;
+  font-variant-numeric: lining-nums;
 }
 
 ::selection {
@@ -460,6 +461,7 @@ section {
   color: var(--gold);
   letter-spacing: .1em;
   margin-bottom: 22px;
+  font-variant-numeric: lining-nums;
 }
 
 .feature-card h3 {
