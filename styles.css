@@ -165,12 +165,26 @@ section { padding: 120px 0; position: relative; }
 
 /* ---------- project list ---------- */
 .proj-list { border-top: 1px solid var(--line); }
-.proj-row { display: flex; align-items: baseline; justify-content: space-between; gap: 30px; padding: 34px 10px; border-bottom: 1px solid var(--line); transition: padding .4s, background .4s; position: relative; }
-.proj-row:hover { padding-left: 28px; background: var(--obsidian-2); }
+.proj-details { border-bottom: 1px solid var(--line); transition: background .4s; }
+.proj-details[open] { background: var(--obsidian-2); }
+.proj-row { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 34px 10px; transition: padding .4s, background .4s; position: relative; cursor: pointer; list-style: none; user-select: none; }
+.proj-row::-webkit-details-marker { display: none; }
+.proj-details:hover .proj-row { padding-left: 28px; background: rgba(201, 169, 106, 0.03); }
 .proj-row .pname { font-family: var(--serif); font-size: 1.6rem; font-weight: 500; }
-.proj-row .ploc { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
-.proj-row .parrow { color: var(--gold); opacity: 0; transition: .4s; font-size: 1.1rem; }
-.proj-row:hover .parrow { opacity: 1; }
+.proj-row .ploc { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); display: inline-flex; align-items: center; gap: 10px; }
+.proj-row .parrow { color: var(--gold); transition: transform .3s ease; font-size: 1.1rem; }
+.proj-details[open] .parrow { transform: rotate(180deg); }
+
+.proj-content { padding: 0 10px 40px 28px; animation: fadeInDetails 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+.proj-info-grid { display: grid; grid-template-columns: 1.2fr 1fr 2.2fr; gap: 40px; margin-top: 10px; }
+.proj-info-block { display: flex; flex-direction: column; gap: 6px; }
+.proj-info-block strong { font-size: .65rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+.proj-info-block span { font-size: .88rem; color: #bdbdc6; line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .proj-info-grid { grid-template-columns: 1fr; gap: 20px; }
+  .proj-content { padding-left: 10px; }
+}
 .region-label { font-family: var(--serif); font-style: italic; font-size: 2rem; color: var(--gold); margin: 64px 0 10px; }
 
 /* ---------- team ---------- */
